@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        function decimalToHexString(number) {
+            if (number < 0) {
+                number = 0xFFFFFFFF + number + 1;
+            }
+
+            return number.toString(16).toUpperCase();
+        }
+
+        document.write(decimalToHexString(92392))
+    </script>
+</body>
+
+</html>
